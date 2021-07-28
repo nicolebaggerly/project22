@@ -89,22 +89,39 @@ textarea {
 
 html {
   width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+
+body {
+  font-family: 'Work Sans', sans-serif;
   padding: 20px;
 }
 
 header img,
 header nav {
+  width: 90%;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
 header nav ul {
-  display: flex;
+  display: inline;
   justify-content: space-around;
-  flex-flow: row wrap;
+  word-spacing: 20px;
+}
+header nav ul li {
+  text-transform: none;
+  display: inline;
+  word-spacing: 40px;
+}
+
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
 }
 
 header h1 {
@@ -113,6 +130,8 @@ header h1 {
   align-content: flex-start;
 }
 
+
+/* Main Styles */
 main {
   display: flex;
   justify-content: center;
@@ -120,6 +139,17 @@ main {
   flex-flow: column;
 }
 
+.friday ol li {
+  line-height: 20px;
+  padding: 15px 0;
+}
+
+.friday iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Recommendations Styles */
 .recommendations {
   display: flex;
   justify-content: center;
@@ -128,30 +158,61 @@ main {
 }
 
 article {
-  width: 30%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-flow: column;
-  text-align: center;
-}
-
-article #hotel {
-  display: none;
-}
-
-#contact {
+  width: 50%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
+  align-items: flex-start;
+  flex-flow: column;
+  text-align: left;
+}
+article p {
+  padding: 0 8px;
+}
+article ul {
+  padding: 0 18px;
+  margin: 0;
 }
 
+
+/* Contact */
+#contact h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row;
+}
+
+.contact-1,
+.contact-2,
+.contact-3 {
+  padding: 0 10px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+}
+
+/* Keep set at 0 to override defaults */
+.contact-1 h3,
+.contact-2 h3,
+.contact-3 h3 {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Footer Styles */
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   align-content: center;
   flex-flow: row wrap;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 
